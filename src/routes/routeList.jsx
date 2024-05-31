@@ -12,4 +12,12 @@ export const routeList = [
 			</ProtectedRoute>
 		),
 	},
+	{
+		path: "/user/:id",
+		element: (
+			<ProtectedRoute>
+				<UserDetail />
+			</ProtectedRoute>
+		),
+	},
 ];
