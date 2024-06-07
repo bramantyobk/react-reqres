@@ -1,7 +1,7 @@
 import Login from "../pages/Login";
+import Register from "../pages/Register";
 import Home from "../pages/Home";
 import UserDetail from "../pages/UserDetail";
-import Register from "../pages/Register";
 import ProtectedRoute from "./ProtectedRoute";
 
 export const routeList = [
@@ -18,12 +18,12 @@ export const routeList = [
 			</ProtectedRoute>
 		),
 	},
-	// {
-	// 	path: "/user/:id",
-	// 	element: (
-	// 		<ProtectedRoute>
-	// 			<UserDetail />
-	// 		</ProtectedRoute>
-	// 	),
-	// },
+	{
+		path: "/home/user/:id",
+		element: (
+			<ProtectedRoute>
+				<UserDetail />
+			</ProtectedRoute>
+		),
+	},
 ];
