@@ -44,8 +44,8 @@ const Login = () => {
 				navigate("/home");
 			}, 2000);
 		} catch (err) {
-			setToast(true);
 			setErrorLogin("Please check your email or password again!");
+			setToast(true);
 			setTimeout(() => {
 				setToast(false);
 			}, 5000);
@@ -63,7 +63,7 @@ const Login = () => {
 					{errorLogin ? (
 						<h1 className="p-2 bg-red-300 rounded-xl">{errorLogin}</h1>
 					) : (
-						<h1 className="p-2 bg-green-300 rounded-lg">Login Successfull</h1>
+						<h1 className="p-2 bg-green-300 rounded-lg">Login Successful</h1>
 					)}
 				</div>
 			)}
